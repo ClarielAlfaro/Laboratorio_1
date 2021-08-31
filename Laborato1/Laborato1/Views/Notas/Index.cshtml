@@ -1,0 +1,49 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Resultado", "Notas", FormMethod.Post))
+{
+
+    <h2>Introducir Datos</h2>
+    <br />
+    <br />
+    <label>Nombre del Estudiante:</label>
+    <br />
+    <input type="text" name="nombre" required />
+    <br />
+    <label>Laboratorio #1:</label>
+    <br />
+    <input type="text" name="Lab1" required />
+    <br />
+    <label>Laboratorio #2:</label>
+    <br />
+    <input type="text" name="Lab2" required />
+    <br />
+    <label>Laboratorio #3:</label>
+    <br />
+    <input type="text" name="Lab3" required />
+    <br />
+    <label>Parcial #1:</label>
+    <br />
+    <input type="text" name="par1" required />
+    <br />
+    <label>Parcial #2:</label>
+    <br />
+    <input type="text" name="par2" required />
+    <br />
+    <label>Parcial #3:</label>
+    <br />
+    <input type="text" name="par3" required />
+    <br />
+    <br />
+    <input type="submit" />
+
+   
+
+
+}
+

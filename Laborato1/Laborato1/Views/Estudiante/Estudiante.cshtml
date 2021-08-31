@@ -1,0 +1,43 @@
+﻿@model List<Laborato1.Models.TblNotasEstudiante>
+@{
+    ViewBag.Title = "Estudiante";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado Estudiantes</h2>
+
+<table class="table table-dark table-striped">
+    <thead>    
+    <th>NOMBRE</th>
+    <th>LAB 1</th>
+    <th>PARCIAL 1</th>
+    <th>LAB 2</th>
+    <th>PARCIAL 2</th>
+    <th>LAB 3</th>
+    <th>PARCIAL 3</th>
+
+    </thead>
+
+
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+        <tr>
+
+            <td>@item.nombre</td>
+            <td>@item.lab1</td>
+            <td>@item.par1</td>
+            <td>@item.lab2</td>
+            <td>@item.par2</td>
+            <td>@item.lab3</td>
+            <td>@item.par3</td>
+
+        </tr>
+
+        }
+
+    </tbody>
+
+</table>
